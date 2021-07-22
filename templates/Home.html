@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="utf-8">
+      <meta name="keywords" content="Leaf Disease Detector, Sample Images, Development Team">
+      <meta name="description" content="">
+      <meta name="page_type" content="np-template-header-footer-from-plugin">
+      <title>Home</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='nicepage.css')}}" media="screen">
+      <link rel="stylesheet" href="{{url_for('static', filename='Home.css')}}" media="screen">
+      <script class="u-script" type="text/javascript" src="{{url_for('static', filename='jquery-1.9.1.min.js')}}" defer=""></script>
+      <script class="u-script" type="text/javascript" src="{{url_for('static', filename='nicepage.js')}}" defer=""></script>
+      <meta name="generator" content="Nicepage 3.20.6, nicepage.com">
+      <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+      <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Anton:400">
+      <script type="application/ld+json">{
+         "@context": "http://schema.org",
+         "@type": "Organization",
+         "name": "",
+         "logo": "images/ai_camp.png"
+         }
+      </script>
+      <meta name="theme-color" content="#266329">
+      <meta property="og:title" content="Home">
+      <meta property="og:type" content="website">
+   </head>
+   <body class="u-body">
+      <header class="u-clearfix u-header u-palette-5-dark-1 u-header" id="sec-b46b">
+         <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="{{ url_for('Home')}}" class="u-image u-logo u-image-1" data-image-width="1079" data-image-height="1080" title="Home">
+            <img src="{{url_for('static', filename='images/ai_camp.png')}}" class="u-logo-image u-logo-image-1" data-image-width="91">
+            </a>
+            <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+               <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                  <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                     <svg>
+                        <use xlink:href="#menu-hamburger"></use>
+                     </svg>
+                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                           <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                              <rect y="1" width="16" height="2"></rect>
+                              <rect y="7" width="16" height="2"></rect>
+                              <rect y="13" width="16" height="2"></rect>
+                           </symbol>
+                        </defs>
+                     </svg>
+                  </a>
+               </div>
+               <div class="u-custom-menu u-nav-container">
+                  <ul class="u-nav u-unstyled u-nav-1">
+                     <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base u-text-white" href="{{url_for('Home')}}" style="padding: 10px 20px;">Home</a></li>
+                     <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base u-text-white" href="{{url_for('Behind_the_AI')}}" style="padding: 10px 20px;">Behind the AI</a></li>
+                     <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-hover-palette-2-base u-text-white" href="https://www.ai-camp.org/" target="_blank" style="padding: 10px 20px;">About AI Camp</a></li>
+                  </ul>
+               </div>
+               <div class="u-custom-menu u-nav-container-collapse">
+                  <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                     <div class="u-sidenav-overflow">
+                        <div class="u-menu-close"></div>
+                        <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                           <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('Home')}}" style="padding: 10px 20px;">Home</a></li>
+                           <li class="u-nav-item"><a class="u-button-style u-nav-link" href="{{url_for('Behind_the_AI')}}" style="padding: 10px 20px;">Behind the AI</a></li>
+                           <li class="u-nav-item"><a class="u-button-style u-nav-link" href="https://www.ai-camp.org/" target="_blank" style="padding: 10px 20px;">About AI Camp</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+               </div>
+            </nav>
+         </div>
+      </header>
+      <section class="u-clearfix u-image u-section-1" id="sec-4cbe" data-image-width="1280" data-image-height="720">
+         <div class="u-clearfix u-sheet u-sheet-1">
+            <div class="u-align-center u-container-style u-expanded-width-sm u-expanded-width-xs u-group u-opacity u-opacity-0 u-white u-group-1">
+               <div class="u-container-layout u-valign-bottom-xs u-container-layout-1">
+                  <h1 class="u-text u-text-white u-title u-text-1">Leaf Disease Detector</h1>
+                  <p class="u-large-text u-text u-text-variant u-text-white u-text-2">AI powered image classifier designed to detect diseases in agricultural plant leaves. </p>
+                  <div class="mbr-buttons--left">
+                     <div class="mbr-section-btn">
+                        <a  data-page-id="519406" class="u-border-2 u-border-white u-btn u-button-style u-hover-palette-4-dark-2 u-palette-5-dark-1 u-text-white u-btn-1" href='#' id='seefood_button'>
+                           <form id='seefood_form' method=post enctype=multipart/form-data>
+                              <input id="seefood_input_field" name="file" type="file" onchange="this.form.submit();" hidden/>
+                           </form>
+                           UPLOAD AN IMAGE
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="u-clearfix u-custom-color-2 u-section-2" id="sec-2542">
+         <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-align-center-xs u-text u-text-body-alt-color u-text-default u-title u-text-1">Sample Images</h1>
+            <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+               <div class="u-layout">
+                  <div class="u-layout-row">
+                     <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                        <div class="u-container-layout u-container-layout-1">
+                           <div class="u-carousel u-expanded-width u-gallery u-gallery-slider u-layout-carousel u-lightbox u-no-transition u-show-text-on-hover u-gallery-1" data-interval="5000" data-u-ride="carousel" id="carousel-dba3">
+                              <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+                                 <li data-u-target="#carousel-dba3" data-u-slide-to="0" class="u-active u-palette-3-light-1 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                                 <li data-u-target="#carousel-dba3" data-u-slide-to="1" class="u-palette-3-light-1 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                                 <li data-u-target="#carousel-dba3" data-u-slide-to="2" class="u-palette-3-light-1 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                                 <li data-u-target="#carousel-dba3" data-u-slide-to="3" class="u-palette-3-light-1 u-shape-circle" style="width: 10px; height: 10px;"></li>
+                              </ol>
+                              <div class="u-carousel-inner u-gallery-inner" role="listbox">
+                                 <div class="u-active u-carousel-item u-effect-fade u-gallery-item u-carousel-item-1">
+                                    <div class="u-back-slide" data-image-width="256" data-image-height="256">
+                                       <img class="u-back-image u-expanded u-image-contain" src="{{ url_for('static', filename='images/yolo_chrysler_909.png')}}">
+                                    </div>
+                                    <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-1">
+                                    </div>
+                                 </div>
+                                 <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-2">
+                                    <div class="u-back-slide" data-image-width="256" data-image-height="256">
+                                       <img class="u-back-image u-expanded u-image-contain" src="{{ url_for('static', filename='images/yolo_chrysler_1201.png')}}">
+                                    </div>
+                                    <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-2">
+                                    </div>
+                                 </div>
+                                 <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-3" data-image-width="256" data-image-height="256">
+                                    <div class="u-back-slide">
+                                       <img class="u-back-image u-expanded u-image-contain" src="{{ url_for('static', filename='images/yolo_chrysler_1458.png')}}">
+                                    </div>
+                                    <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-3">
+                                       <h3 class="u-gallery-heading"></h3>
+                                       <p class="u-gallery-text"></p>
+                                    </div>
+                                    <style data-mode="XL" data-visited="true"></style>
+                                    <style data-mode="LG"></style>
+                                    <style data-mode="MD"></style>
+                                    <style data-mode="SM"></style>
+                                    <style data-mode="XS" data-visited="true"></style>
+                                 </div>
+                                 <div class="u-carousel-item u-effect-fade u-gallery-item u-carousel-item-4" data-image-width="256" data-image-height="256">
+                                    <div class="u-back-slide">
+                                       <img class="u-back-image u-expanded u-image-contain" src="{{ url_for('static', filename='images/yolo_chrysler_1511.png')}}">
+                                    </div>
+                                    <div class="u-align-center u-over-slide u-shading u-valign-bottom u-over-slide-4">
+                                       <h3 class="u-gallery-heading"></h3>
+                                       <p class="u-gallery-text"></p>
+                                    </div>
+                                    <style data-mode="XL"></style>
+                                    <style data-mode="LG"></style>
+                                    <style data-mode="MD"></style>
+                                    <style data-mode="SM"></style>
+                                    <style data-mode="XS" data-visited="true"></style>
+                                 </div>
+                              </div>
+                              <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-icon-circle u-opacity u-opacity-70 u-text-palette-3-light-2 u-carousel-control-1" href="#carousel-dba3" role="button" data-u-slide="prev">
+                                 <span aria-hidden="true">
+                                    <svg viewBox="0 0 451.847 451.847">
+                                       <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                                          c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                                          c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                                    </svg>
+                                 </span>
+                                 <span class="sr-only">
+                                    <svg viewBox="0 0 451.847 451.847">
+                                       <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                                          c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                                          c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                                    </svg>
+                                 </span>
+                              </a>
+                              <a class="u-carousel-control u-carousel-control-next u-icon-circle u-opacity u-opacity-70 u-text-palette-3-light-2 u-carousel-control-2" href="#carousel-dba3" role="button" data-u-slide="next">
+                                 <span aria-hidden="true">
+                                    <svg viewBox="0 0 451.846 451.847">
+                                       <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                                          L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                                          c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                                    </svg>
+                                 </span>
+                                 <span class="sr-only">
+                                    <svg viewBox="0 0 451.846 451.847">
+                                       <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                                          L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                                          c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                        <div class="u-container-layout u-container-layout-2">
+                           <p class="u-align-center u-text u-text-2">
+                              <span style="font-size: 1.875rem; font-weight: 700;">1,800 images of cherry, tomato, grape, corn, and potato leaves were used to train the AI.&nbsp;</span>
+                              <br>
+                              <br>
+                              <span style="font-size: 1.875rem; font-weight: 700;">The labels shown identify the type of plant and whether or not it is healthy or diseased.</span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="u-align-center u-clearfix u-palette-2-base u-section-3" id="carousel_246d">
+         <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-custom-font u-text u-text-default u-text-1">Development Team</h1>
+            <p class="u-text u-text-white u-text-2">This team is made up of outstanding high school students embarking into the world of AI.</p>
+            <div class="u-expanded-width u-layout-horizontal u-list u-list-1">
+               <div class="u-repeater u-repeater-1">
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-1">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-1" data-image-width="611" data-image-height="682">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-3">Connor Bost</h3>
+                        <p class="u-text u-text-body-color u-text-4"> My name is Connor Bost. I am 16 years old and from Hickory, North Carolina. I am a rising Junior at the North Carolina School of Science and Mathematics. I love skiing, playing guitar, and the environment and I am interested in mechanical engineering.</p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-2">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-2" data-image-width="498" data-image-height="675">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-5">Zachary Bastek</h3>
+                        <p class="u-text u-text-body-color u-text-6"> Zack is a 17 year old at Bellingham High School in Massachusetts. He enjoys playing soccer for the varsity team and is looking forward to pursuing a career in computer science.</p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-3">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-3" data-image-width="765" data-image-height="1080">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-7">Surya Sripathi</h3>
+                        <p class="u-text u-text-body-color u-text-8"> Hi I'm Surya Sripathi. I am 17 years old and from California. I am a senior at Evergreen Valley High school. I like to play basketball and code.</p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-4">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-4">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-4" data-image-width="810" data-image-height="1080">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-9">Lukas Wehlitz</h3>
+                        <p class="u-text u-text-body-color u-text-10"> Lukas is a 16 year old in Madison, Wisconsin and attends JMM High school. He is very interested in computers and how they can help change the world, and enjoys coding in his free time.&nbsp;</p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-5">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-5">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-5" data-image-width="416" data-image-height="544">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-11">Aasha Yeluri</h3>
+                        <p class="u-text u-text-body-color u-text-12"> Student at JP Stevens High School in Edison NJ. I’m really interested in AI and ML, and enjoy coding different projects in my free time.</p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-6">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-6">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-6" data-image-width="958" data-image-height="1080">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-13">Jaydon Grunsted</h3>
+                        <p class="u-text u-text-body-color u-text-14"> 18 year old living in Ann Arbor who really likes coding and computers. Graduated Pioneer High School.<br>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="u-align-center u-container-style u-list-item u-radius-17 u-repeater-item u-shape-round u-white u-list-item-7">
+                     <div class="u-container-layout u-similar-container u-valign-top u-container-layout-7">
+                        <div class="u-expanded-width u-image u-image-circle u-preserve-proportions u-image-7" data-image-width="810" data-image-height="1080">
+                           <div class="u-preserve-proportions-child" style="padding-top: 100%;"></div>
+                        </div>
+                        <h3 class="u-custom-font u-font-oswald u-text u-text-default u-text-15">Aashish Yadavally</h3>
+                        <p class="u-text u-text-body-color u-text-16"> Aashish is a Ph.D student in Computer Science with a focus on Intelligent Systems at the University of Texas at Dallas. He is deeply fascinated by the world of A.I, and enjoyed leading the students on this journey!</p>
+                     </div>
+                  </div>
+               </div>
+               <a class="u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+                  <span aria-hidden="true">
+                     <svg viewBox="0 0 451.847 451.847">
+                        <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                           c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                           c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                     </svg>
+                  </span>
+                  <span class="sr-only">
+                     <svg viewBox="0 0 451.847 451.847">
+                        <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                           c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                           c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                     </svg>
+                  </span>
+               </a>
+               <a class="u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+                  <span aria-hidden="true">
+                     <svg viewBox="0 0 451.846 451.847">
+                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                           L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                           c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                     </svg>
+                  </span>
+                  <span class="sr-only">
+                     <svg viewBox="0 0 451.846 451.847">
+                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                           L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                           c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                     </svg>
+                  </span>
+               </a>
+            </div>
+         </div>
+      </section>
+      <section class="u-align-center u-clearfix u-section-4" id="sec-4f8e">
+         <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <div alt="" class="u-align-left u-image u-image-circle u-image-contain u-image-1" src="" data-image-width="630" data-image-height="593"></div>
+         </div>
+      </section>
+      <script>
+         // added to get upload with a button working
+         document.getElementById('seefood_button').addEventListener('click', openDialog);
+         
+         function openDialog() {
+             document.getElementById('seefood_input_field').click();
+         }
+      </script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $("#spinner").bind("ajaxSend", function() {
+                 $(this).show();
+             }).bind("ajaxStop", function() {
+                 $(this).hide();
+             }).bind("ajaxError", function() {
+                 $(this).hide();
+             });
+             // seefood_input_field
+             $('#seefood_button').click(function() {
+         
+             });
+         
+         });
+      </script>
+   </body>
+</html>
