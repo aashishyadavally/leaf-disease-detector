@@ -14,15 +14,15 @@ from utils import get_base_url, allowed_file, and_syntax
     port may need to be changed if there are multiple flask servers running on same server
     comment out below three lines of code when ready for production deployment
 '''
-port = 12345
-base_url = get_base_url(port)
-app = Flask(__name__, static_url_path=base_url+'static')
+#port = 12345
+#base_url = get_base_url(port)
+#app = Flask(__name__, static_url_path=base_url+'static')
 
 '''
     cv scaffold code
     uncomment below line when ready for production deployment
 '''
-# app = Flask(__name__)
+app = Flask(__name__)
 
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -39,13 +39,14 @@ cfg_path = os.path.join('yolo', 'yolo.cfg')
 net = get_yolo_net(cfg_path, weights_path)
 
 
-#@app.route('/')
-@app.route(base_url)
+@app.route('/')
+#@app.route(base_url)
 def Home():
     return render_template('Home.html')
 
-#@app.route('/', methods=['POST'])
-@app.route(base_url, methods=['POST'])
+
+@app.route('/', methods=['POST'])
+#@app.route(base_url, methods=['POST'])
 def Home_post():
     # check if the post request has the file part
     if 'file' not in request.files:
@@ -64,12 +65,15 @@ def Home_post():
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
         return redirect(url_for('Classification_Results', filename=filename))
 
-@app.route(base_url + '/behind-the-ai')
+
+@app.route('/behind-the-ai', methods=['POST'])
+#@app.route(base_url + '/behind-the-ai')
 def Behind_the_AI():
     return render_template('Behind-the-AI.html')
 
-#@app.route('/uploads/<filename>')
-@app.route(base_url + '/uploads/<filename>', methods=['GET', 'POST'])
+
+@app.route('/uploads/<filename>', methods=['GET', 'POST'])
+#@app.route(base_url + '/uploads/<filename>', methods=['GET', 'POST'])
 def Classification_Results(filename):
     if request.method == 'GET':
         image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
@@ -116,15 +120,18 @@ def Classification_Results(filename):
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('Classification_Results', filename=filename))
 
-@app.route(base_url + '/feedback')
+
+@app.route('/feedback')
+#@app.route(base_url + '/feedback')
 def Feedback():
     return render_template('Feedback.html')
     
     
-#@app.route('/files/<path:filename>')
-@app.route(base_url + '/files/<path:filename>')
+@app.route('/files/<path:filename>')
+#@app.route(base_url + '/files/<path:filename>')
 def files(filename):
     return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
+
 
 if __name__ == "__main__":
     '''
